@@ -1,0 +1,53 @@
+{
+  "name": "version-selector-type",
+  "version": "0.0.0",
+  "description": "Returns the type of a version selector",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "preview && node test && mos t",
+    "md": "mos"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pnpm/version-selector-type.git"
+  },
+  "keywords": [
+    "semver",
+    "version",
+    "range",
+    "tag",
+    "dist-tag",
+    "selector"
+  ],
+  "author": "Zoltan Kochan <z@kochan.io> (https://www.kochan.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pnpm/version-selector-type/issues"
+  },
+  "homepage": "https://github.com/pnpm/version-selector-type#readme",
+  "devDependencies": {
+    "mos": "^2.0.0-alpha.3",
+    "mos-plugin-readme": "^1.0.4",
+    "package-preview": "^1.0.3",
+    "tape": "^4.8.0"
+  },
+  "mos": {
+    "plugins": [
+      "readme"
+    ],
+    "installation": {
+      "useShortAlias": true
+    }
+  },
+  "dependencies": {
+    "semver": "^5.4.1"
+  }
+}
