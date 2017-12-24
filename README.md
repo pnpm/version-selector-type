@@ -1,5 +1,7 @@
 # version-selector-type
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/pnpm/version-selector-type.svg)](https://greenkeeper.io/)
+
 > Returns the type of a version selector
 
 <!--@shields('npm', 'travis')-->
