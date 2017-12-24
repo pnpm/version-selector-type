@@ -1,6 +1,6 @@
 {
   "name": "version-selector-type",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Returns the type of a version selector",
   "main": "index.js",
   "typings": "index.d.ts",
