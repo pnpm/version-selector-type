@@ -33,6 +33,17 @@ console.log(getVersionSelectorType('github:zkochan/foo'))
 ```
 <!--/@-->
 
+## API
+
+### `getVersionSelectorType(selector, [loose])`
+
+Returns the type of the version selector or `null` in case it is an unknow selector.
+
+### Arguments
+
+- `selector` - _string_ - Required.
+- `[loose]` - _boolean_ - Optional. False by default. If true, Interprets versions and ranges loosely.
+
 ## License
 
 [MIT](./LICENSE) © [Zoltan Kochan](https://www.kochan.io/)
