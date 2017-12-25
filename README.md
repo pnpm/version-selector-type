@@ -1,6 +1,6 @@
 # version-selector-type
 
-> Returns the type of a version selector
+> Returns the type and normalized version of a version selector
 
 <!--@shields('npm', 'travis')-->
 [![npm version](https://img.shields.io/npm/v/version-selector-type.svg)](https://www.npmjs.com/package/version-selector-type) [![Build Status](https://img.shields.io/travis/pnpm/version-selector-type/master.svg)](https://travis-ci.org/pnpm/version-selector-type)
@@ -20,29 +20,36 @@ npm i -S version-selector-type
 const getVersionSelectorType = require('version-selector-type')
 
 console.log(getVersionSelectorType('1.0.0'))
-//> version
+//> { normalized: '1.0.0', type: 'version' }
 
 console.log(getVersionSelectorType('^1.0.0'))
-//> range
+//> { normalized: '>=1.0.0 <2.0.0', type: 'range' }
 
 console.log(getVersionSelectorType('latest'))
-//> tag
+//> { normalized: 'latest', type: 'tag' }
 
 console.log(getVersionSelectorType('github:zkochan/foo'))
 //> null
+
+console.log(getVersionSelectorType('1.2.0beta'))
+//> { normalized: '1.2.0-beta', type: 'version' }
+
+console.log(getVersionSelectorType.strict('1.2.0beta'))
+//> { normalized: '1.2.0beta', type: 'tag' }
 ```
 <!--/@-->
 
 ## API
 
-### `getVersionSelectorType(selector, [loose])`
+### `getVersionSelectorType(selector)`
 
-Returns the type of the version selector or `null` in case it is an unknow selector.
+Returns the type of the version selector and the normalized form of that selector.
+Returns `null` in case it is an unknown selector.
+Interprets versions and ranges loosely.
 
-### Arguments
+### `getVersionSelectorType.strict(selector)`
 
-- `selector` - _string_ - Required.
-- `[loose]` - _boolean_ - Optional. False by default. If true, Interprets versions and ranges loosely.
+Same as `getVersionSelectorType()` but interprets versions and ranges not loosely.
 
 ## License
 
