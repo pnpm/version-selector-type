@@ -48,6 +48,6 @@
     }
   },
   "dependencies": {
-    "semver": "^5.4.1"
+    "semver": "^6.0.0"
   }
 }
