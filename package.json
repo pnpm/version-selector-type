@@ -12,7 +12,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "preview && node test && mos t",
+    "test": "preview && node test",
     "md": "mos"
   },
   "repository": {
