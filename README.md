@@ -9,7 +9,7 @@
 ## Installation
 
 ```sh
-npm i -S version-selector-type
+<pnpm|npm|yarn> add version-selector-type
 ```
 
 ## Usage
