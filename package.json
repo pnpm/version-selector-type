@@ -36,7 +36,7 @@
   "devDependencies": {
     "mos": "^2.0.0-alpha.3",
     "mos-plugin-readme": "^1.0.4",
-    "package-preview": "^1.0.3",
+    "package-preview": "^3.0.0",
     "tape": "^5.0.0"
   },
   "mos": {
@@ -48,6 +48,6 @@
     }
   },
   "dependencies": {
-    "semver": "^6.0.0"
+    "semver": "^7.3.2"
   }
 }
