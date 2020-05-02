@@ -9,7 +9,7 @@
     "index.d.ts"
   ],
   "engines": {
-    "node": ">=4"
+    "node": ">=10.13"
   },
   "scripts": {
     "test": "preview && node test",
